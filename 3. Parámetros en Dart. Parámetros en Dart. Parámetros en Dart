@@ -1,0 +1,29 @@
+3. Parámetros en Dart
+
+Parámetros Posicionales
+
+Se envían respetando el orden.
+
+void saludar(String nombre, int edad){
+  print("Hola $nombre, tienes $edad años");
+}
+
+Parámetros Nombrados
+
+Se envían indicando el nombre del parámetro.
+
+void registrar({required String nombre, required int edad}){
+  print("$nombre - $edad");
+}
+
+Parámetros Opcionales
+
+No son obligatorios.
+
+void mostrar(String nombre, [String? ciudad]){
+  print(nombre);
+}
+
+Diferencias
+
+Los parámetros posicionales dependen del orden, mientras que los nombrados mejoran la legibilidad y reducen errores al llamar funciones.
