@@ -1,0 +1,29 @@
+2. Polimorfismo
+
+Concepto
+
+El polimorfismo permite utilizar una referencia de una clase padre para almacenar objetos de clases hijas.
+
+Variable de tipo padre
+
+Animal animal = Perro();
+
+Ejecución dinámica
+
+Cuando se llama un método, se ejecuta la versión correspondiente al objeto real.
+
+Casting en Dart
+
+Operador is
+
+Verifica si un objeto pertenece a una clase.
+
+if(animal is Perro){
+  print("Es un perro");
+}
+
+Operador as
+
+Permite convertir un objeto a un tipo específico.
+
+Perro perro = animal as Perro;
