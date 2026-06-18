@@ -1,0 +1,39 @@
+Análisis del código
+
+¿Qué hace cada clase y por qué fue diseñada así?
+
+La clase Animal la hice como clase principal porque todos los animales tienen cosas en común. En ella coloqué el nombre y algunos métodos que pueden usar tanto los perros como los gatos.
+
+Las clases Perro y Gato heredan de Animal porque ambos son tipos de animales. Las separé para que cada una pudiera tener su propio sonido y así mostrar las diferencias entre ellas.
+
+¿Qué pasaría si eliminas @override?
+
+Si quito @override, el programa puede seguir funcionando, pero sería más difícil darme cuenta si cometí algún error al sobrescribir el método. Por eso considero que es útil utilizarlo.
+
+Explica en tus palabras cómo funciona el polimorfismo en tu código.
+
+En mi código el polimorfismo se ve cuando guardo objetos de tipo Perro y Gato dentro de una lista de Animal. Aunque todos están en la misma lista, cada uno responde de manera diferente cuando se llama al método hacerSonido().
+
+¿Dónde aplicaste casting y por qué fue necesario?
+
+Apliqué casting cuando convertí una variable de tipo Animal a tipo Perro utilizando la palabra as. Lo hice para poder trabajar con ese objeto como un Perro y demostrar el uso del casting en Dart.
+
+¿Qué diferencia viste entre parámetros nombrados y parámetros posicionales?
+
+La principal diferencia que observé es que los parámetros posicionales deben colocarse en el orden correcto para que funcionen bien. En cambio, los parámetros nombrados permiten indicar el nombre del parámetro, lo que hace que el código sea más claro y fácil de entender.
+
+Modificación realizada
+
+Para probar la sobreescritura, modifiqué el método hacerSonido() de la clase Gato.
+
+Antes mostraba:
+
+print("$nombre dice: Miau Miau");
+
+Después lo cambié por:
+
+print("$nombre dice: Miau Miau Miau");
+
+¿Qué ocurrió?
+
+Cuando ejecuté nuevamente el programa, el gato mostró el nuevo sonido que le asigné. Esto me permitió comprobar que una clase hija puede modificar el comportamiento de un método heredado de la clase padre.
